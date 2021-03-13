@@ -13,7 +13,7 @@ public class EntradaSaida {
 		
 		double altura;
 		
-		Scanner leitor = new Scanner(System.in);
+		Scanner leitor = new Scanner(System.in);	
 		
 		System.out.println("Digite o seu nome: " );
 		
@@ -32,7 +32,6 @@ public class EntradaSaida {
 
 		
 		System.out.printf("Nome %s \nidade %d \naltura %.2f", nome, idade, altura);
-
 
 		
 	}
