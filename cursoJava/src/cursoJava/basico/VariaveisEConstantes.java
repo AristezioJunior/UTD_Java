@@ -18,9 +18,9 @@ public class VariaveisEConstantes {
 		//Criação de variáveis
 		String nome="José";
 		
-		int idade=48;
+		int idade = 48;
 		
-		double peso=73.4 , altura=1.73;
+		double peso = 73.4 , altura=1.73;
 		
 		char sexo= 'm', cnh='a';
 		
