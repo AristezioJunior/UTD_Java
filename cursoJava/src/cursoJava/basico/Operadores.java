@@ -80,16 +80,16 @@ public class Operadores {
 		System.out.println("OPERADORES LÓGICOS && - || (BIT A BIT)");
 		
 		System.out.println("OPERADORES LÓGICOS E- && (BIT A BIT)");
-		System.out.println("falso E falso: " + (false&&false));
-		System.out.println("falso E verdadeiro: " + (false&&true));
+		//System.out.println("falso E falso: " + (false&&false));
+		//System.out.println("falso E verdadeiro: " + (false&&true));
 		System.out.println("verdadeiro E falso: " + (true&&false));
 		System.out.println("verdadeiro E verdadeiro: " + (true&&true));
 		
 		System.out.println("OPERADORES LÓGICOS OU- || (BIT A BIT)");
 		System.out.println("falso OU falso: " + (false||false));
 		System.out.println("falso OU verdadeiro: " + (false||true));
-		System.out.println("verdadeiro OU falso: " + (true||false));
-		System.out.println("verdadeiro OU verdadeiro: " + (true||true));
+		//System.out.println("verdadeiro OU falso: " + (true||false));
+		//System.out.println("verdadeiro OU verdadeiro: " + (true||true));
 		
 		
 	}
