@@ -6,7 +6,7 @@ public class TesteFuncionario {
 
 		FuncionarioOperacional funcionario = new FuncionarioOperacional(1L, "Aristézio Júnior", "Programador Júnior", 3200.0, "COTIC");
 		
-		FuncionarioOperacional funcionario1 = new FuncionarioOperacional();
+		//FuncionarioOperacional funcionario1 = new FuncionarioOperacional();
 
 //		funcionario1.setCadastro(1L);
 //		funcionario1.setNome("Aristezio");

@@ -9,7 +9,7 @@ public abstract class Funcionario {
 	private static int numFuncionarios;
 	
 	public Funcionario() {
-		this.numFuncionarios++;
+		numFuncionarios++;
 	}
 	
 	

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css"></style>
+</head>
+<body style="background:#ADD8E6;">
+	<div style="background:#ADD8E6;">
+		<nav  > <!-- Cabeçalho-->
+	  		<div class="container-fluid" style="background:#4682B4;">
+	    		<a class="navbar-brand" href="https://www.linkedin.com/in/arist%C3%A9zio-j%C3%BAnior-1b7245171/" style="color:#191970">
+	      			<img  src="logo-a.png" alt="" width="30" height="24" class="d-inline-block align-text-top" >
+	      			AristézioBook
+	    		</a>
+	    		<span class="badge bg-info text-dark"><a href="cadastro" style="color:#191970">CADASTRO</a></span>
+				<span class="badge bg-info text-dark"><a href="/" style="color:#191970">PROGRAMADOR</a></span>
+	  		</div>
+		</nav><!-- Fim Cabeçalho-->
+		
+
+
+	<div id="wrapper">
+		<h1><font face="Arial">Livros:</font></h1>
+
+		<table id="Keywords" class="table table-hover table-dark">
+			<thead>
+				<tr>
+					<th scope="col">Id</th>
+					<th scope="col">Título</th>
+					<th scope="col">Autor</th>
+					<th scope="col">Quantidade</th>
+					<th scope="col">Preço</th>
+					<th scope="col">Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="livro:${livros}">
+					<td th:text="${livro.id}">Id</td>
+					<td th:text="${livro.titulo}">Título</td>
+					<td th:text="${livro.autor}">Autor</td>
+					<td th:text="${livro.quantidade}">Quantidade</td>
+					<td th:text="${livro.preco}">Preço</td>
+					<td>
+					<a th:href="@{'/editar/'+${livro.id}}" class="button green"><span><i class="fa fa-edit"></i></span></a>
+					<a th:href="@{'/deletar/'+${livro.id}}" class="button red"><span><i class="fa fa-trash"></i></span></a></td>
+					<td></td>
+				</tr>
+				
+			</tbody>
+		</table>
+
+	</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
